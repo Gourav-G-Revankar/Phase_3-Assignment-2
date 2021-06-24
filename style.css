@@ -1,0 +1,140 @@
+/*----------requirement----------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*----------hero-block----------*/
+.hero-block {
+    max-width: 80%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.hero-block h2 {
+    font-size: 35px;
+    margin: 30px 0;
+}
+
+/*----------entry-block----------*/
+.entry-block {
+    max-width: 60%;
+    margin: auto;
+}
+
+.left-block {
+    float: left;
+    max-width: 45%;
+    margin: 0 auto;
+}
+
+.right-block {
+    float: right;
+    max-width: 45%;
+    margin: 0 auto 40px auto;
+}
+
+input {
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #000000;
+}
+
+label {
+    text-align: left;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.btn {
+    width: 100%;
+    height: 35px;
+    margin-top: 15px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #000000;
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+span {
+    display: block;
+    color: #ff0000;
+}
+
+/*----------display-block----------*/
+.display-block {
+    width: 80%;
+    margin: 0 auto;
+}
+
+table,
+th,
+td {
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #000000;
+}
+
+/*----------Media Query----------*/
+@media only screen and (max-width: 991px) {
+    .hero-block {
+        max-width: 90%;
+    }
+
+    .entry-block {
+        max-width: 75%;
+    }
+
+    .left-block {
+        max-width: 48%;
+    }
+
+    .right-block {
+        max-width: 48%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .hero-block {
+        max-width: 90%;
+    }
+
+    th,
+    td {
+        display: inline-block;
+        margin: auto;
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .entry-block {
+        max-width: 80%;
+        margin: auto;
+    }
+
+    .left-block {
+        max-width: 100%;
+    }
+
+    .right-block {
+        max-width: 100%;
+    }
+}

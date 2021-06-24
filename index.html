@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Student Details</title>
+</head>
+
+<body>
+
+    <!-- hero-block -->
+    <div class="hero-block">
+        <h2>
+            Student Details
+        </h2>
+    </div>
+
+    <!-- entry-block -->
+
+    <div class="entry-block">
+
+        <form autocomplete="off" onsubmit="event.preventDefault(); onformSubmit();" class="left-block">
+            <label>First Name</label>
+            <input type="text" id="fname" name="fname">
+            <span id="fname-error"></span>
+            <label>Last Name</label>
+            <input type="text" id="lname" name="lname">
+            <span id="lname-error"></span>
+            <label>Degree</label>
+            <input type="text" id="degree" name="degree">
+            <span id="degree-error"></span>
+            <label>Sub-Degree</label>
+            <input type="text" id="sdegree" name="sdegree">
+            <span id="sdegree-error"></span>
+        </form>
+
+
+        <form autocomplete="off" onsubmit="event.preventDefault(); onformSubmit();" class="right-block">
+            <label>Date of birth</label>
+            <input type="text" id="dob" name="dob" placeholder="DD-MM-YYYY">
+            <span id="dob-error"></span>
+            <label>Email ID</label>
+            <input type="text" id="emailid" name="emailid">
+            <span id="emailid-error"></span>
+            <label>Mobile Number</label>
+            <input type="text" id="pnumber" name="pnumber">
+            <span id="pnumber-error"></span>
+            <button class="btn">Submit</button>
+        </form>
+
+    </div>
+
+    <!-- Table -->
+
+    <table class="display-block" id="emp-list">
+        <tr>
+            <th>Student ID</th>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Degree</th>
+            <th>Sub-Degree</th>
+            <th>Date of birth</th>
+            <th>Email ID</th>
+            <th>Mobile Number</th>
+            <th>Action</th>
+        </tr>
+        <tbody>
+
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
